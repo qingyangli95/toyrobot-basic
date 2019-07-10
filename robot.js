@@ -4,6 +4,12 @@ var state = {
     icon: 'R'
 }
 
+var tempstate = {
+    robotPosition: 0,
+    mapSize: 5,
+    icon: 'R'
+}
+
 var histories = [];
 
 function availablePosition(newPosition, mapSize) {
@@ -16,7 +22,8 @@ function availablePosition(newPosition, mapSize) {
 
 function move(newPosition) {
     if (availablePosition(newPosition, state.mapSize)) {
-        histories.push(state);
+        tempstate=state;
+        histories.push(tempstate);
         state.robotPosition = newPosition;
         render();
         return true;
