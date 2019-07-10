@@ -4,11 +4,7 @@ var state = {
     icon: 'R'
 }
 
-var tempstate = {
-    robotPosition: 0,
-    mapSize: 5,
-    icon: 'R'
-}
+var temppos=0
 
 var histories = [];
 
@@ -22,8 +18,8 @@ function availablePosition(newPosition, mapSize) {
 
 function move(newPosition) {
     if (availablePosition(newPosition, state.mapSize)) {
-        tempstate.robotPosition=state.robotPosition;
-        histories.push(tempstate);
+        temppos=state.robotPosition;
+        histories.push(temppos);
         state.robotPosition = newPosition;
         render();
         return true;
@@ -48,7 +44,7 @@ function onCommandRight() {
 }
 
 function onReverse() {
-    state = histories.pop();
+    state.robotPosition = histories.pop();
     render();
 }
 
