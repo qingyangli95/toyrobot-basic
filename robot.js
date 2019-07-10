@@ -22,7 +22,7 @@ function availablePosition(newPosition, mapSize) {
 
 function move(newPosition) {
     if (availablePosition(newPosition, state.mapSize)) {
-        tempstate=state;
+        tempstate.robotPosition=state.robotPosition;
         histories.push(tempstate);
         state.robotPosition = newPosition;
         render();
