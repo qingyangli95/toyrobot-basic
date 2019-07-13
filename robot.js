@@ -57,6 +57,7 @@ function onExpand(){
     //var currentDiv = document.getElementById("div1");
     //document.currentDiv.appendChild(element); 
     var para = document.createElement("div");
+    para.className = "map-cell";
     para.innerHTML = "This is a paragraph.";
     document.getElementById("div1").appendChild(para);
 
