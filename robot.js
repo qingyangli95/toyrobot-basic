@@ -17,6 +17,16 @@ function availablePosition(newPosition, mapSize) {
     }
 }
 
+function isBlock(newPosition){
+    if(newPosition == state.elementBlock){
+        return true;
+    }else{
+        return false;
+    }
+    }
+
+}
+
 function move(newPosition) {
     if (availablePosition(newPosition, state.mapSize)) {
         temppos=state.robotPosition;
@@ -26,8 +36,11 @@ function move(newPosition) {
         return true;
     } else {
         //return false;
+        if(！isBlock(newPosition)){
         onExpand(newPosition);
         onCommandRight()
+    }
+        
     }
 }
 
