@@ -49,8 +49,8 @@ function onReverse() {
 }
 
 function onExpand(){
-    var element = document.createElement("div");
-    element.className = "map-cell";
+    var element = document.createElement("new");
+    //element.className = "map-cell";
     element.appendChild(document.createTextNode("The"));
     var currentDiv = document.getElementById("div1");
     document.currentDiv.appendChild(element); 
