@@ -59,7 +59,7 @@ function onExpand(newPosition){
     var para = document.createElement("div");
     para.className = "map-cell";
     para.index = newPosition;
-    para.onclick = onclick(para.index);
+    para.onclick = onBlock(para.index);
     document.getElementById("row0").appendChild(para);
     state.mapSize++;
 
