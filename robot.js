@@ -25,7 +25,6 @@ function isBlock(newPosition){
     }
     }
 
-}
 
 function move(newPosition) {
     if (availablePosition(newPosition, state.mapSize)) {
