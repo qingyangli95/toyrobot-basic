@@ -24,7 +24,9 @@ function move(newPosition) {
         render();
         return true;
     } else {
-        return false;
+        //return false;
+        onExpand();
+        onCommandRight()
     }
 }
 
@@ -49,16 +51,10 @@ function onReverse() {
 }
 
 function onExpand(){
-    //var element = document.createElement("new");
-    //element.className = "map-cell";
-    //element.appendChild(document.createTextNode("The"));
-    //var node = document.getElementById("div2").lastChild;
-    //document.getElementById("div1").appendChild(node);
-    //var currentDiv = document.getElementById("div1");
-    //document.currentDiv.appendChild(element); 
     var para = document.createElement("div");
     para.className = "map-cell";
     document.getElementById("div1").appendChild(para);
+    state.mapSize++;
 
 }
 
