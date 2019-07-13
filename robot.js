@@ -10,7 +10,7 @@ var temppos=0
 var histories = [];
 
 function availablePosition(newPosition, mapSize) {
-    if (newPosition >= 0 && newPosition < mapSize) {
+    if (newPosition >= 0 && newPosition < mapSize && newPosition != state.elementBlock) {
         return true;
     } else {
         return false;
