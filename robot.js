@@ -2,7 +2,7 @@ var state = {
     robotPosition: 0,
     mapSize: 5,
     icon: 'R'
-    block=9999
+    block:9999
 }
 
 var temppos=0
