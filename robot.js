@@ -56,7 +56,7 @@ function onExpand(){
     //document.getElementById("div1").appendChild(node);
     //var currentDiv = document.getElementById("div1");
     //document.currentDiv.appendChild(element); 
-    var para = document.createElement("P");
+    var para = document.createElement("div");
     para.innerHTML = "This is a paragraph.";
     document.getElementById("div1").appendChild(para);
 
