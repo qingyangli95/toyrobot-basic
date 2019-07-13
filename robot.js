@@ -36,14 +36,12 @@ function move(newPosition) {
         return true;
     } else {
         //return false;
-        if(！isBlock(newPosition)){
+        if(!isBlock(newPosition)){
         onExpand(newPosition);
         onCommandRight()
-    }
-        
+        }
     }
 }
-
 function render() {
     var mapCells = document.querySelectorAll('.map-cell');
     mapCells.forEach((aCell, index) => {
