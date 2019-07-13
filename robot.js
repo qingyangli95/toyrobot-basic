@@ -59,7 +59,11 @@ function onExpand(){
 }
 
 function onChangeIcon(){
-    state.icon = "Robot";
+    if(state.icon == 'R'){
+        state.icon = "Robot";
+    }else{
+        state.icon = 'R';
+    }
     render();
 }
 render();
