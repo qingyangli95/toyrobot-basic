@@ -2,6 +2,7 @@ var state = {
     robotPosition: 0,
     mapSize: 5,
     icon: 'R'
+    block=9999
 }
 
 var temppos=0
@@ -25,7 +26,7 @@ function move(newPosition) {
         return true;
     } else {
         //return false;
-        onExpand();
+        onExpand(newPosition);
         onCommandRight()
     }
 }
@@ -50,10 +51,12 @@ function onReverse() {
     render();
 }
 
-function onExpand(){
+function onExpand(newPosition){
     var para = document.createElement("div");
     para.className = "map-cell";
-    document.getElementById("div1").appendChild(para);
+    para.index = newPosition;
+    para.onclick = 
+    document.getElementById("row0").appendChild(para);
     state.mapSize++;
 
 }
@@ -66,4 +69,14 @@ function onChangeIcon(){
     }
     render();
 }
+
+function onBlock(id){
+    if(robotPosition!=id){
+        block = id;
+        document.getElementById(id).innerHTML='B';
+    }
+
+
+}
+
 render();

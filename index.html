@@ -16,12 +16,12 @@
 <body>
   <div class="game-board">
     <div class="game-map">
-      <div class="map-row" id="div1">
-        <div class="map-cell" onclick="onChangeIcon()"></div>
-        <div class="map-cell"></div>
-        <div class="map-cell"></div>
-        <div class="map-cell"></div>
-        <div class="map-cell"></div>
+      <div class="map-row" id="row0">
+        <div class="map-cell" id="0" onclick="onBlock(this.id)"></div>
+        <div class="map-cell" id="1" onclick="onBlock(this.id)"></div>
+        <div class="map-cell" id="2" onclick="onBlock(this.id)"></div>
+        <div class="map-cell" id="3" onclick="onBlock(this.id)"></div>
+        <div class="map-cell" id="4" onclick="onBlock(this.id)"></div>
       </div>
     <div class="control-panel">
       <button onclick="onCommandLeft()">&lt=</button>
