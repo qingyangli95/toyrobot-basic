@@ -58,4 +58,8 @@ function onExpand(){
 
 }
 
+function onChangeIcon(){
+    state.icon = "Robot";
+    render();
+}
 render();
