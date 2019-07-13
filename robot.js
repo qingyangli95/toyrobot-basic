@@ -37,7 +37,7 @@ function render() {
         if (index === state.robotPosition) {
             aCell.innerHTML = state.icon;
         } else {
-            if(index != elementBlock)
+            if(index != state.elementBlock)
             {
                 aCell.innerHTML = '';
             }
