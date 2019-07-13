@@ -68,8 +68,8 @@ function onReverse() {
 function onExpand(newPosition){
     var para = document.createElement("div");
     para.className = "map-cell";
-    para.index = newPosition;
-    para.onclick = function(){onBlock(para.index);} ;
+    para.id = newPosition;
+    para.onclick = function(){onBlock(para.id);} ;
     document.getElementById("row0").appendChild(para);
     state.mapSize++;
 
