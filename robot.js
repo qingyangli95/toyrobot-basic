@@ -71,8 +71,8 @@ function onChangeIcon(){
 }
 
 function onBlock(id){
-    if(robotPosition!=id){
-        elementBlock = id;
+    if(state.robotPosition!=id){
+        state.elementBlock = id;
         document.getElementById(id).innerHTML='B';
     }
 
