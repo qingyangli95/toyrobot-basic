@@ -2,7 +2,7 @@ var state = {
     robotPosition: 0,
     mapSize: 5,
     icon: 'R'
-    block: 9999
+    elementBlock: 9999
 }
 
 var temppos=0
@@ -55,7 +55,7 @@ function onExpand(newPosition){
     var para = document.createElement("div");
     para.className = "map-cell";
     para.index = newPosition;
-    para.onclick = 
+    para.onclick = onclick(para.index);
     document.getElementById("row0").appendChild(para);
     state.mapSize++;
 
@@ -72,7 +72,7 @@ function onChangeIcon(){
 
 function onBlock(id){
     if(robotPosition!=id){
-        block = id;
+        elementBlock = id;
         document.getElementById(id).innerHTML='B';
     }
 
