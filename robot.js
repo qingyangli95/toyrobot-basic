@@ -52,10 +52,13 @@ function onExpand(){
     //var element = document.createElement("new");
     //element.className = "map-cell";
     //element.appendChild(document.createTextNode("The"));
-    var node = document.getElementById("div2").lastChild;
-    document.getElementById("div1").appendChild(node);
+    //var node = document.getElementById("div2").lastChild;
+    //document.getElementById("div1").appendChild(node);
     //var currentDiv = document.getElementById("div1");
     //document.currentDiv.appendChild(element); 
+    var para = document.createElement("P");
+    para.innerHTML = "This is a paragraph.";
+    document.getElementById("div1").appendChild(para);
 
 }
 
