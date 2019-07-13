@@ -54,7 +54,7 @@ function onExpand(){
     //element.appendChild(document.createTextNode("The"));
     var node = document.getElementById("div1").lastChild;
     document.getElementById("div1").appendChild(node);
-    //var currentDiv = document.getElementById("div1");
+    var currentDiv = document.getElementById("div1");
     //document.currentDiv.appendChild(element); 
 
 }
