@@ -80,7 +80,7 @@ function onBlock(id){
             document.getElementById("state.elementBlock").innerHTML = '';
         }        
         state.elementBlock = id; 
-        document.getElementById(id).innerHTML='B';
+        document.getElementById("id").innerHTML='B';
     }
 
 
