@@ -52,7 +52,8 @@ function onExpand(){
     var element = document.createElement("div");
     element.className = "map-cell";
     element.appendChild(document.createTextNode("The"));
-    document.getElementById("div1").append(element);
+    var currentDiv = document.getElementById("div1");
+    document.body.insertBefore(element, currentDiv); 
 
 }
 
