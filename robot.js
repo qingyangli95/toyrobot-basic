@@ -1,7 +1,7 @@
 var state = {
     robotPosition: 0,
     mapSize: 5,
-    icon: 'R'
+    icon: 'R',
     elementBlock: 9999
 }
 
