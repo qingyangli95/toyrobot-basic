@@ -48,4 +48,10 @@ function onReverse() {
     render();
 }
 
+function onExpand(){
+    var element = document.createElement("div");
+    document.getElementById('map-row').appendChild(element);
+
+}
+
 render();
