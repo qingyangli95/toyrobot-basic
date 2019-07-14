@@ -21,7 +21,9 @@ class Game {
             this.render();
             return true;
         } else {
-            return false;
+            this.state.mapSize++;
+            this.move(newPosition);
+            return true;
         }
     }
 
