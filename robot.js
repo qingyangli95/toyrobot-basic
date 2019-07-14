@@ -27,14 +27,8 @@ class Game {
 
     render() {
         var mapCells = document.querySelectorAll('.map-cell');
-        // for (var index = 0; index < mapCells.length; index++) {
-        //     if (index === this.state.robotPosition) {
-        //         aCell.innerHTML = this.state.icon;
-        //     } else {
-        //         aCell.innerHTML = '';
-        //     }
-        // }
-        mapCells.forEach((aCell, index) => {
+
+        mapCells.forEach((aCell, index) =>{
             if (index === this.state.robotPosition) {
                 aCell.innerHTML = this.state.icon;
             } else {
