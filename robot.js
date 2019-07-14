@@ -14,7 +14,7 @@ class Game {
             return false;
         }
     }
-    
+
     move(newPosition) {
         if (this.availablePosition(newPosition, this.state.mapSize)) {
             this.state.robotPosition = newPosition;
@@ -24,9 +24,10 @@ class Game {
             return false;
         }
     }
-    
+
     render() {
         var mapCells = document.querySelectorAll('.map-cell');
+
         mapCells.forEach((aCell, index) =>{
             if (index === this.state.robotPosition) {
                 aCell.innerHTML = this.state.icon;
@@ -35,12 +36,13 @@ class Game {
             }
         });
     }
-    
+
     onCommandRight() {
         this.move(this.state.robotPosition + 1);
     }
-    
+
 }
+
 
 var game = new Game(5, 2, 'R');
 game.render();
