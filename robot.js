@@ -27,13 +27,13 @@ class Game {
     
     render() {
         var mapCells = document.querySelectorAll('.map-cell');
-        mapCells.forEach(function(aCell, index) =>{
+        mapCells.forEach((aCell, index) =>{
             if (index === this.state.robotPosition) {
                 aCell.innerHTML = this.state.icon;
             } else {
                 aCell.innerHTML = '';
             }
-        })
+        });
     }
     
     onCommandRight() {
